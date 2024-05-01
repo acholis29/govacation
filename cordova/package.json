@@ -1,0 +1,56 @@
+{
+  "name": "biz.govacation.guidegv",
+  "displayName": "GV Guide",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^11.0.0",
+    "cordova-background-geolocation-plugin": "^2.0.10",
+    "cordova-background-timer": "^0.0.4",
+    "cordova-ios": "^7.1.0",
+    "cordova-plugin-background-mode": "^0.7.3",
+    "cordova-plugin-device": "^2.1.0",
+    "cordova-plugin-foreground-service": "^1.1.3",
+    "cordova-plugin-geolocation": "^5.0.0",
+    "cordova-plugin-keyboard": "^1.2.0",
+    "cordova-plugin-splashscreen": "^6.0.2",
+    "cordova-plugin-statusbar": "^4.0.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-keyboard": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
+      },
+      "cordova-background-timer": {},
+      "cordova-plugin-background-mode": {},
+      "cordova-plugin-foreground-service": {},
+      "cordova-background-geolocation-plugin": {
+        "GOOGLE_PLAY_SERVICES_VERSION": "11+",
+        "ICON": "@mipmap/ic_launcher",
+        "SMALL_ICON": "@mipmap/ic_launcher",
+        "ACCOUNT_NAME": "@string/app_name",
+        "ACCOUNT_LABEL": "@string/app_name",
+        "ACCOUNT_TYPE": "$PACKAGE_NAME.account",
+        "CONTENT_AUTHORITY": "$PACKAGE_NAME",
+        "ALWAYS_USAGE_DESCRIPTION": "This app always requires location tracking",
+        "MOTION_USAGE_DESCRIPTION": "This app requires motion detection"
+      }
+    },
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}

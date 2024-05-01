@@ -1,0 +1,33 @@
+{
+  "cwd": "D:\\--- Project\\STS\\Mobile\\guide",
+  "type": [
+    "web",
+    "pwa",
+    "cordova"
+  ],
+  "name": "Guide",
+  "pkg": "biz.govacation.guide",
+  "framework": "core",
+  "template": "single-view",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "cordova": {
+    "folder": "cordova",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": [
+      "cordova-plugin-statusbar",
+      "cordova-plugin-keyboard",
+      "cordova-plugin-splashscreen"
+    ]
+  },
+  "theming": {
+    "customColor": true,
+    "color": "#c2180c",
+    "darkMode": false,
+    "iconFonts": true
+  },
+  "customBuild": false
+}
